@@ -46,7 +46,9 @@ python manage.py startapp accounts
 
 #### Next, you need to add accounts in the INSTALLED_APPS array inside the settings.py file of your project.
 
-# Installing & Setting up django-crispy-forms
+```
+Installing & Setting up django-crispy-forms
+````
 
 
 ------------------------------------------
@@ -54,7 +56,7 @@ python manage.py startapp accounts
 * Before adding anything else, let's install the django-crispy-forms application by using pip:
 
 ````
-# pip install django-crispy-forms
+pip install django-crispy-forms
 ````
 
 
