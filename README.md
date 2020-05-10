@@ -21,18 +21,28 @@ you will build a simple example Django application with a form styled with Boots
 * After installing Django, you need to create a project  using django
 
 ### Project Create
-------------------------------------------
+
+
+````
 django-admin startproject dempproject
-------------------------------------------
+````
 
 * Next, create an application using manage.py, you can name it accounts
 
 ### App Create
-------------------------------------------
-* cd demoproject
-+ django-admin startapp accounts
+
+````
+cd demoproject
+````
+
+````
+django-admin startapp accounts
+````
 -       (or)
-* python manage.py startapp accounts
+
+````
+python manage.py startapp accounts
+````
 
 #### Next, you need to add accounts in the INSTALLED_APPS array inside the settings.py file of your project.
 
@@ -40,3 +50,22 @@ django-admin startproject dempproject
 
 
 ------------------------------------------
+
+* Before adding anything else, let's install the django-crispy-forms application by using pip:
+
+````
+# pip install django-crispy-forms
+````
+
+
++ Next, as always, you need to add django-crispy-forms into the INSTALLED_APPS array in the setting.py file
+
+--------------------------------------------
+```INSTALLED_APPS = [
+
+    'accounts(appname)',
+    
+    'crispy_forms',
+    
+         ]
+````
