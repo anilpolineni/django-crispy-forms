@@ -38,7 +38,7 @@ cd demoproject
 ````
 django-admin startapp accounts
 ````
--       (or)
+     (or)
 
 ````
 python manage.py startapp accounts
@@ -214,9 +214,12 @@ ___
 from django.contrib import admin
 from django.urls import path
 from accounts import views
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('register/',views.register,name="register")
+    path("",views.index,name="index"),
+    path('register/',views.register,name="register"),
+    path('show/'views.show,name="show")
 ]
 
 ````
@@ -226,7 +229,69 @@ ___
 
 # Django Form Example with Bootstrap 4
 
-<img src="register.png" alt="Smiley face" height="42" width="42">
+<img src="register.png" alt="Smiley face" height="900" width="900">
+
+____
+
+# Insreting Values
+
+ **Next accounts in views.py in your App**
+ + send values to form by using **POST Method**
+ 
+ ```
+ def register(request):
+	if request.method=="POST":
+		form=StudentForm(request.POST)
+		if form.is_valid():
+			form.save()
+			return redirect('show')
+	form=StudentForm()
+	return render(request,'student/register.html',{'form':form})
+````
+
+____
+
+# Read the data in Table Format
+
+````
+{% extends 'accounts/index.html'%}
+
+{% block title %}Show{% endblock title %}
+{%block content%}
+<div class="container-fluid pt-4">
+<table border="3">
+	<tr>
+		<th>FirstName</th>
+		<th>LastName</th>
+		<th>Email</th>
+		<th>Gender</th>
+		<th>Age</th>
+		<th>Dob</th>
+		<th>phoneno</th>
+	</tr>
+{% for data in datas %}
+	<tbody>
+		<tr>
+			<td>{{data.first_name}}</td>
+			<td>{{data.last_name}}</td>
+			<td>{{data.email}}</td>
+			<td>{{data.gender}}</td>
+			<td>{{data.age}}</td>
+			<td>{{data.date_of_birth}}</td>
+			<td>{{data.phoneno}}</td>
+		</tr>
+		{% endfor %}
+	</tbody>
+</table>
+</div>
+{% endblock content %}
+````
+____
+
+**At this point, this is how to display page looks like**
+
+<img src="table.png" alt="smile" height="900" width="900">
+
 
 
 
