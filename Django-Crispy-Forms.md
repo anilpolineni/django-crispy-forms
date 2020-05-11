@@ -181,3 +181,30 @@ def register(request):
 	return render(request,'accounts/register.html',{'form':form})
 ```
 ____
+
+**If you don't specify the template name, Django will assume you are using a accounts/filename.html template**
+
+***Next, create an templates/accounts/register.html template inside the accounts application that extends the base.html template and add the following code***
+
+```
+{% extends 'accounts/base.html' %}
+{%block title%}Register{%endblock content%}
+{% load crispy_forms_tags%}
+{%block content%}
+
+  <form action="{% url 'register' %}" method="post">
+  
+    {% csrf_token %}
+    
+    {{ form|crispy }}
+    
+       <div class="text-center">
+   	  <input type="submit" class="btn btn-success  btn-lg" value="Register">
+   	  <input type="reset" class="btn btn-warning  btn-lg"value="Cancel">
+       </div>
+  </form>
+{% endblock  content %}
+
+```
+___
+
