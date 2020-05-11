@@ -229,7 +229,7 @@ ___
 
 # Django Form Example with Bootstrap 4
 
-<img src="register.png" alt="Smiley face" height="900" width="900">
+<img src="https://drive.google.com/open?id=1HCiwoUnzBLOIJeo1tK12oNm8i_Ndye5_" alt="Smiley face" height="900" width="900">
 
 ____
 
@@ -290,7 +290,7 @@ ____
 
 **At this point, this is how to display page looks like**
 
-<img src="table.png" alt="smile" height="900" width="900">
+<img src="https://drive.google.com/open?id=1VfAVNK1abB-97n2GoXwLYnhSekILoszL" alt="smile" height="900" width="900">
 
 
 
