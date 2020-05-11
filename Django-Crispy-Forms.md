@@ -74,6 +74,8 @@ pip install django-crispy-forms
 
 ### Since django-crispy-forms supports multiple styles, you also need to specify the CSS framework you want to use in your forms.
 
-````
-You can do that by using the * CRISPY_TEMPLATE_PACK * setting in the settings.py file:
-````
+* You can do that by using the **CRISPY_TEMPLATE_PACK**  setting in the settings.py file
+
+
+
+
