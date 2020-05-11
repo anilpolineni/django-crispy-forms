@@ -222,4 +222,8 @@ urlpatterns = [
 ````
 ___
 
-**At this point, this is how our login page looks like**
+**At this point, this is how our Register page looks like**
+
+# Django Form Example with Bootstrap 4
+
+
