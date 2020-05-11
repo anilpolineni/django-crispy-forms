@@ -226,6 +226,8 @@ ___
 
 # Django Form Example with Bootstrap 4
 
+<img src="register.png alt="img" width=50px,height=50px>
+
 
 
 
