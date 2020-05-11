@@ -94,3 +94,27 @@ ____
 Adding Bootstrap 4 is quite easy, you can either head over to its official website at [getbootstrap.com](https://getbootstrap.com/) and download the files in your project's folder or you can also use Bootstrap 4 from a CDN. See the [docs](https://getbootstrap.com/docs/4.0/getting-started/introduction/) for more information
 
 ____
+
+**Create a templates/accounts/base.html template inside the accounts application and add the following code**
+
+```
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Django Form Example with Bootstrap 4</title>
+  </head>
+  <body>
+    <div class="container d-flex h-100">
+      <div class="row justify-content-center">
+        <div class="col-10">
+          <h1> Django Form Example with Bootstrap 4 </h1>
+          {% block main %}
+          {% endblock %}
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+````
