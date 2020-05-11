@@ -218,7 +218,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('register/',views.register,name="register")
 ]
-```
+
+````
 ___
 
 **At this point, this is how our login page looks like**
