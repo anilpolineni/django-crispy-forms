@@ -292,7 +292,7 @@ ____
 **At this point, this is how to display page looks like**
 
 <img src="https://drive.google.com/file/d/1HCiwoUnzBLOIJeo1tK12oNm8i_Ndye5_/view?usp=sharing" height="900" width="900">
-<a href="https://drive.google.com/file/d/1HCiwoUnzBLOIJeo1tK12oNm8i_Ndye5_/view?usp=sharing"height="900" width="900">ClickHere</a>
+<a href="https://drive.google.com/open?id=1VfAVNK1abB-97n2GoXwLYnhSekILoszL"height="900" width="900">ClickHere</a>
 
 
 
