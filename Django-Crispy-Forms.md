@@ -224,8 +224,6 @@ ___
 
 **At this point, this is how our Register page looks like**
 
-<span style ="color : green">
-# Django Form Example with Bootstrap 4
-</span>
+<span style ="color : green">Django Form Example with Bootstrap 4</span>
 
 
