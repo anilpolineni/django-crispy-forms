@@ -208,3 +208,17 @@ ____
 ```
 ___
 
+**To be able to see our register page, we need to add a register URL. Open the urls.py file and add**
+
+````
+from django.contrib import admin
+from django.urls import path
+from accounts import views
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('register/',views.register,name="register")
+]
+```
+___
+
+**At this point, this is how our login page looks like**
