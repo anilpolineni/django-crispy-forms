@@ -65,7 +65,7 @@ pip install django-crispy-forms
 --------------------------------------------
 ```INSTALLED_APPS = [
 
-    'accounts(appname)',
+    'accounts',(appname)
     
     'crispy_forms',
     
