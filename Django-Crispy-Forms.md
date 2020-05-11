@@ -146,14 +146,14 @@ class Register(models.Model):
 ```
 ___
 
-**Next,create forms.py in your accounts**
+**Next,create accounts/forms.py in your App**
 
 ```
 from django.forms import ModelForm
 
 from student.models import  Register
 
-class StudentForm(ModelForm):
+class RegisterForm(ModelForm):
 	class Meta():
 
 		model=Register
@@ -163,5 +163,21 @@ class StudentForm(ModelForm):
 		# fields=['first_name','last_name','age','pincode']
 
 ```
+____
 
+**Next,create accounts/views.py in your App**
 
+```
+from django.shortcuts import render,redirect
+
+from django.http import HttpResponse
+
+from accounts.forms import RegisterForm   # or *  
+
+from.models import Register 
+
+def register(request):
+	form=RegisterForm()   # generate html form
+	return render(request,'accounts/register.html',{'form':form})
+```
+____
