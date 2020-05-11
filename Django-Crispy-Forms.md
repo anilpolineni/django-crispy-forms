@@ -97,12 +97,18 @@ ____
 
 **Create a templates/accounts/base.html template inside the accounts application and add the following code**
 
+**You can also add the JavaScript file for Bootstrap 4 if you intend to use the features that require JavaScript**
+
+***We use the container, row, col-x and justify-content-center classes to create a simple layout with a one row and one column.***
+
 ```
+{% load static %}
 <!doctype html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css'%}">
+     <link rel="stylesheet" type="text/css" href="{% static 'js/bootstrap.min.js'%}">
+     <link rel="stylesheet" type="text/css" href="{% static 'js/jquery.min.js'%}">
     <title>Django Form Example with Bootstrap 4</title>
   </head>
   <body>
@@ -118,3 +124,5 @@ ____
   </body>
 </html>
 ````
+
+
