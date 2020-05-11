@@ -1,5 +1,5 @@
 # Django-Crispy-Forms
-you will build a simple example Django application with a form styled with Bootstrap
+* you will build a simple example Django application with a form styled with Bootstrap
 
 
 # What is Django-Crispy-Forms
