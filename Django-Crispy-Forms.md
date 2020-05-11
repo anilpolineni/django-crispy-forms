@@ -229,7 +229,8 @@ ___
 
 # Django Form Example with Bootstrap 4
 
-<a href="https://drive.google.com/file/d/1HCiwoUnzBLOIJeo1tK12oNm8i_Ndye5_/view?usp=sharing"><img src="https://drive.google.com/file/d/1HCiwoUnzBLOIJeo1tK12oNm8i_Ndye5_/view?usp=sharing" height="1000" width="1000">ClickHere</a>
+<img src="https://drive.google.com/file/d/1HCiwoUnzBLOIJeo1tK12oNm8i_Ndye5_/view?usp=sharing" height="900" width="900">
+<a href="https://drive.google.com/file/d/1HCiwoUnzBLOIJeo1tK12oNm8i_Ndye5_/view?usp=sharing" height="900" width="900">ClickHere</a>
 
 ____
 
@@ -290,10 +291,10 @@ ____
 
 **At this point, this is how to display page looks like**
 
-<img src="https://drive.google.com/open?id=1VfAVNK1abB-97n2GoXwLYnhSekILoszL" alt="smile" height="900" width="900">
+<img src="https://drive.google.com/file/d/1HCiwoUnzBLOIJeo1tK12oNm8i_Ndye5_/view?usp=sharing" height="900" width="900">
+<a href="https://drive.google.com/file/d/1HCiwoUnzBLOIJeo1tK12oNm8i_Ndye5_/view?usp=sharing"height="900" width="900">ClickHere</a>
 
 
 
-<a href="https://drive.google.com/open?id=1HCiwoUnzBLOIJeo1tK12oNm8i_Ndye5_"><img src="https://drive.google.com/open?id=1HCiwoUnzBLOIJeo1tK12oNm8i_Ndye5_>" style="width: 500px; max-width: 100%; height: auto" title="Click for the larger version." /></a>
 
 
