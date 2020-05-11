@@ -229,7 +229,7 @@ ___
 
 # Django Form Example with Bootstrap 4
 
-<img src="https://drive.google.com/open?id=1HCiwoUnzBLOIJeo1tK12oNm8i_Ndye5_" alt="Smiley face" height="900" width="900">
+<img src="https://drive.google.com/file/d/1HCiwoUnzBLOIJeo1tK12oNm8i_Ndye5_/view?usp=sharing" alt="Smiley face" height="900" width="900">
 
 ____
 
