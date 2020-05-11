@@ -116,13 +116,52 @@ ____
       <div class="row justify-content-center">
         <div class="col-10">
           <h1> Django Form Example with Bootstrap 4 </h1>
-          {% block main %}
-          {% endblock %}
+          {% block content %}
+          {% endblock  content %}
         </div>
       </div>
     </div>
   </body>
 </html>
 ````
+
+
+# Creating the User Model(s)
+
+**Let's now create a User model. Open the accounts/models.py file and add the following code**
+
+```
+from django.db import models
+
+class Register(models.Model):
+    gender=(('male','Male'),('female','Female'))
+    first_name=CharField(max_length=50)
+    last_name=CharField(max_length=50)
+    name = models.CharField(max_length=100)
+    email = models.EmailField(blank=True)
+    gender=models.CharField(max_length=10,choices=gender)
+    age=models.IntegerField(null=True)
+    phoneno=models.CharField(max_length=12)
+    date-of-birth=models.IntegerField(null=True)
+```
+___
+
+**Next,create forms.py in your accounts**
+
+```
+from django.forms import ModelForm
+
+from student.models import  Register
+
+class StudentForm(ModelForm):
+	class Meta():
+
+		model=Register
+
+		fields='__all__'  # few fields['first_name','last_name','age','pincode']
+
+		# fields=['first_name','last_name','age','pincode']
+
+```
 
 
