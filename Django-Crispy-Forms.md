@@ -294,5 +294,6 @@ ____
 
 
 
+<a href="https://drive.google.com/open?id=1HCiwoUnzBLOIJeo1tK12oNm8i_Ndye5_"><img src="https://drive.google.com/open?id=1HCiwoUnzBLOIJeo1tK12oNm8i_Ndye5_>" style="width: 500px; max-width: 100%; height: auto" title="Click for the larger version." /></a>
 
 
