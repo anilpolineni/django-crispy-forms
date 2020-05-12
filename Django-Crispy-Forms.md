@@ -24,7 +24,7 @@
 
 
 ````
-django-admin startproject dempproject
+django-admin startproject demoproject
 ````
 
 * Next, create an application using manage.py, you can name it accounts
@@ -36,12 +36,12 @@ cd demoproject
 ````
 
 ````
-django-admin startapp accounts
+django-admin startapp student
 ````
      (or)
 
 ````
-python manage.py startapp accounts
+python manage.py startapp student
 ````
 
 #### Next, you need to add accounts in the INSTALLED_APPS array inside the settings.py file of your project.
@@ -67,7 +67,7 @@ pip install django-crispy-forms
 INSTALLED_APPS = 
 [
 
-    'accounts',(appname)
+    'student',(appname)
     
     'crispy_forms',
     
@@ -128,7 +128,7 @@ ____
 
 # Creating the User Model(s)
 
-**Let's now create a User model. Open the accounts/models.py file and add the following code**
+**Let's now create a User model. Open the student/models.py file and add the following code**
 
 ```
 from django.db import models
@@ -146,7 +146,7 @@ class Register(models.Model):
 ```
 ___
 
-**Next,create accounts/forms.py in your App**
+**Next,create student/forms.py in your App**
 
 ```
 from django.forms import ModelForm
@@ -165,14 +165,14 @@ class RegisterForm(ModelForm):
 ```
 ____
 
-**Next,create accounts/views.py in your App**
+**Next,create student/views.py in your App**
 
 ```
 from django.shortcuts import render,redirect
 
 from django.http import HttpResponse
 
-from accounts.forms import RegisterForm   # or *  
+from student.forms import RegisterForm   # or *  
 
 from.models import Register 
 
@@ -182,12 +182,12 @@ def register(request):
 ```
 ____
 
-**If you don't specify the template name, Django will assume you are using a accounts/filename.html template**
+**If you don't specify the template name, Django will assume you are using a student/filename.html template**
 
-***Next, create an templates/accounts/register.html template inside the accounts application that extends the base.html template and add the following code***
+***Next, create an templates/student/register.html template inside the accounts application that extends the base.html template and add the following code***
 
 ```
-{% extends 'accounts/base.html' %}
+{% extends 'student/base.html' %}
 {%block title%}Register{%endblock content%}
 {% load crispy_forms_tags%}
 {%block content%}
@@ -213,7 +213,7 @@ ___
 ````
 from django.contrib import admin
 from django.urls import path
-from accounts import views
+from student import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -255,7 +255,7 @@ ____
 # Read the data in Table Format
 
 ````
-{% extends 'accounts/index.html'%}
+{% extends 'student/index.html'%}
 
 {% block title %}Show{% endblock title %}
 {%block content%}
