@@ -206,7 +206,7 @@ def contact(request):
 ## output
 
 <img src ="contact.png"  height=300px; width=900px;>
-___
+____
 
 ## Django Template Syntaxs
 
