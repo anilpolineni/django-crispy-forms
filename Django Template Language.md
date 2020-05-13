@@ -209,6 +209,20 @@ def contact(request):
 
 ____
 
+## Static Contact Details
+
+* urls.py
+
+````
+path('about/',views.about,name="about")
+````
+
+## output
+
+<img src ="about.png"  height=300px; width=900px;>
+
+____
+
 ## Django Template Syntaxs
 
 **Iteration**
