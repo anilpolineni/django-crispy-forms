@@ -206,8 +206,24 @@ def contact(request):
 ## output
 
 <img src ="contact.png"  height=300px; width=900px;>
+___
 
+## Django Template Syntaxs
 
+**Iteration**
+````
+{% for i in data%}
+{% endfor %}
 
+````
+____
 
+**Condition**
+
+````
+{% if condition %}
+{% endif %}
+{% else %}
+
+````
 
