@@ -39,7 +39,7 @@ TEMPLATES = [
 
 ## Django Template Simple Example
 
-* First, create a directory Django App inside templates folder  inside the project app as we did below
+* First, create a directory Django App inside ```templates folder```,```appfolder```,  inside the project app as we did below
 
 ````
 templates/appnanme/base.html
@@ -47,7 +47,34 @@ templates/appnanme/base.html
 ````
 **Inside base.html apply with Code**
 
-<img src="base.png" height=150px; width=150px;>
+<img src="base.png" height=300px; width=900px;>
+
+____
+
+**before create header.html template** 
+
+**here inside base.html we can load with include – Django Template Tags Syntax is ```{% include appname/filename.html  %}``` **
+
+## include – Django Template Tags
+
+* Django templates not only allow passing data from view to template, but also provides some limited features of programming such as ````variables````, ````for loops````, ````comments````, ````extends````, ````include````,````if````,````endif````,````else````.
+
+## how to use include tag in Templates
+
+* ```include tag``` **loads a template and renders it with the current context**. This is a way of “including” other templates within a template. The template name can either be a variable or a hard-coded (quoted) string, in either single or double quotes.
+
+
+### include with header.html
+
+<img src="include.png"height=300px; width=900px;>
+
+____
+
+**After that create a template header.html inside the ``templates/appname/filename.html``.
+
+
+
+
 
 
 
