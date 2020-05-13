@@ -20,7 +20,7 @@
 ````
 django-crispy-forms supports Django 2.2 and 3.0 with Python 3.5+.
 
-```
+````
 
 ## Creating a Django Project & Application
 
@@ -57,7 +57,7 @@ Installing & Setting up django-crispy-forms
 ````
 
 
-------------------------------------------
+____
 
 * Before adding anything else, let's install the django-crispy-forms application by using pip:
 
@@ -68,8 +68,8 @@ pip install django-crispy-forms
 
 + Next, as always, you need to add django-crispy-forms into the INSTALLED_APPS array in the setting.py file
 
---------------------------------------------
-```
+
+````
 INSTALLED_APPS = 
 [
 
