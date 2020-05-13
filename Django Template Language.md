@@ -221,7 +221,7 @@ def contact(request):
 
 ## output
 
-<img src ="contact.png"  height=300px; width=900px;>
+<img src ="contacts.png"  height=300px; width=900px;>
 
 ____
 
