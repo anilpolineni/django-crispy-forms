@@ -53,6 +53,12 @@ ____
 
 **before create header.html template** 
 
+## Tags
+
+* In a template, Tags provide ``arbitrary logic`` in the rendering process. For example, a tag can output content, serve as a control structure e.g. an ```"if" statement``` or a ```"for" loop```, grab content from a database etc.
+
+``Tags are surrounded by {% %} braces``.
+
 **here inside base.html we can load with include – Django Template Tags Syntax is ```{% include appname/filename.html  %}```**
 
 ```
