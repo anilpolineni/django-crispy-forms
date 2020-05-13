@@ -19,6 +19,7 @@
 
 ````
 django-crispy-forms supports Django 2.2 and 3.0 with Python 3.5+.
+
 ```
 
 ## Creating a Django Project & Application
