@@ -84,7 +84,9 @@ ____
 <img src="nav.png" height=300px; width=900px;>
 
 
+**create home.html template**
 
+<img src="home.png" height=300px; width=900px;>
 
 
 
