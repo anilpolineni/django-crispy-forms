@@ -121,7 +121,44 @@ def home(request):
 <img src="homepage.png" height=300px; width=900px;>
 
 
+**Variables**
 
+* Variables associated with a context can be accessed by ``{{}}`` (double curly braces). For example, a variable name value is APSSDC. Then the following statement will replace name with its value.
+
+``
+My name is {{name}}.   
+My name is APSSDC  
+``
+
+**Django Variable Example**
+
++ views.py
+
+``
+def index(request):
+	name={
+	'name' : 'APSSDC'
+	}
+	return render(request,'demoapp/home.html',name)
+``
+
++ home.html
+
+```
+{% extends 'demoapp/base.html' %}
+
+{%block title%}Home{% endblock title%}
+
+{% block content %}
+
+<h1 style="color: red">Welcome To {{name}}</h1>
+
+{% endblock content %}
+```
+
+## output
+
+<img src ="var.png"  height=300px; width=900px;>
 
 
 
