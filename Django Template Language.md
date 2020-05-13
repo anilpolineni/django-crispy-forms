@@ -83,6 +83,20 @@ ____
 
 <img src="nav.png" height=300px; width=900px;>
 
+## extends – Django Template Tags
+
+* Django templates not only allow passing data from view to template, but also provides some limited features of programming such as ````variables````, ````for loops````, ````comments````, ````extends````, ````include````,````if````,````endif````,````else````.
+
+
+## how to use extends tag in Templates
+
+* ``extends tag`` in Templates. extends tag is used for inheritance of templates in django. One needs to repeat the same code again and again. Using extends we can inherit templates as well as variables.
+
+**Syntax
+
+``
+{% extends 'appname/template_name.html' %}
+``
 
 **create home.html template**
 
