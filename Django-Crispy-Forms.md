@@ -16,6 +16,10 @@
 + A basic knowledge of Python,
 - A working knowledge of Django.
 
+````
+django-crispy-forms supports Django 2.2 and 3.0 with Python 3.5+.
+```
+
 ## Creating a Django Project & Application
 
 * After installing Django, you need to create a project  using django
