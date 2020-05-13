@@ -53,11 +53,12 @@ ____
 
 **before create header.html template** 
 
-**here inside base.html we can load with include – Django Template Tags Syntax is ```{% include appname/filename.html  %}``` **
+**here inside base.html we can load with include – Django Template Tags Syntax is ```{% include appname/filename.html  %}```**
 
-```{% include 'demoapp/header.html'%}
-   {% block content%}
-   {% endblock content %}
+```
+{% include 'demoapp/header.html'%}
+{% block content%}
+{% endblock content %}
 ```
 
 ## include – Django Template Tags
