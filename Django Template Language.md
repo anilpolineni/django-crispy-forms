@@ -13,8 +13,41 @@
 
 * Django template engine is used to separate the design from the python code and allows us to build dynamic web pages.
 
+## Django Template Configuration
 
+**To configure the template system, we have to provide some entries in ```settings.py file```.**
 
+````
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [],
+        'APP_DIRS': True,
+        'OPTIONS': {
+            'context_processors': [
+                'django.template.context_processors.debug',
+                'django.template.context_processors.request',
+                'django.contrib.auth.context_processors.auth',
+                'django.contrib.messages.context_processors.messages',
+            ],
+        },
+    },
+]
+````
+
+**Here, we mentioned that our template directory name is templates. By default, DjangoTemplates looks for a templates subdirectory in each of the INSTALLED_APPS.**
+
+## Django Template Simple Example
+
+* First, create a directory Django App inside templates folder  inside the project app as we did below
+
+````
+templates/appnanme/base.html
+
+````
+**Inside base.html apply with Code**
+
+<img src="base.png" height=150px; width=150px;>
 
 
 
