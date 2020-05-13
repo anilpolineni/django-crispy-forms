@@ -55,6 +55,11 @@ ____
 
 **here inside base.html we can load with include – Django Template Tags Syntax is ```{% include appname/filename.html  %}``` **
 
+```{% include 'demoapp/header.html'%}
+   {% block content%}
+   {% endblock content %}
+```
+
 ## include – Django Template Tags
 
 * Django templates not only allow passing data from view to template, but also provides some limited features of programming such as ````variables````, ````for loops````, ````comments````, ````extends````, ````include````,````if````,````endif````,````else````.
@@ -66,11 +71,16 @@ ____
 
 ### include with header.html
 
-<img src="include.png"height=300px; width=900px;>
+<img src="include.png" height=300px; width=900px;>
 
 ____
 
 **After that create a template header.html inside the ``templates/appname/filename.html``.
+
+**create header.html template**
+
+* Inside header.html apply code [navbar](https://www.w3schools.com/bootstrap4/bootstrap_navbar.asp)
+
 
 
 
