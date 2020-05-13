@@ -161,8 +161,51 @@ def index(request):
 <img src ="var.png"  height=300px; width=900px;>
 
 
+## Static Contact Details
 
+* urls.py
 
+````
+path('contact/',views.contact,name="contact")
+````
+* views.py
+
+````
+def contact(request):
+	details={
+	'company':'apssdc',
+	'place':'vijayawada',
+	'mobileno':'123456789',
+	'email':'andhra@apssdc.in'
+	}
+	return render(request,'demoapp/contact.html',details)
+````
+
+* contact.html
+
+````
+{% extends 'demoapp/base.html' %}
+{%block title%}Home{% endblock title%}
+{% block content %}
+<table>
+	<tr>
+		<th>Company:-</th> 
+		<td>{{company}}</td><tr>
+		<th>place:-</th>
+		<td>{{place}}</td><tr>
+		<th>MobileNO:-</th>
+		<td>{{mobileno}}</td><tr>
+		<th>Email:-</th>
+		<td>{{email}}</td>
+	</tr>
+</table>
+{% endblock content %}
+
+````
+
+## output
+
+<img src ="contact.png"  height=300px; width=900px;>
 
 
 
