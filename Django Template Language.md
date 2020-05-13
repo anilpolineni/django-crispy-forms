@@ -59,6 +59,16 @@ ____
 
 ``Tags are surrounded by {% %} braces``.
 
+**For Example**
+
+````
+{% csrf_token %}  
+  
+{% if user.is_authenticated %}  
+    Hello, {{ user.username }}.  
+{% endif %}
+````
+
 **here inside base.html we can load with include – Django Template Tags Syntax is ```{% include appname/filename.html  %}```**
 
 ```
