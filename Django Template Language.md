@@ -92,7 +92,7 @@ ____
 
 * ``extends tag`` in Templates. extends tag is used for inheritance of templates in django. One needs to repeat the same code again and again. Using extends we can inherit templates as well as variables.
 
-**Syntax
+**Syntax**
 
 ``
 {% extends 'appname/template_name.html' %}
