@@ -135,7 +135,7 @@ My name is APSSDC
 + views.py
 
 ``
-def index(request):
+	def index(request):
 	name={
 	'name' : 'APSSDC'
 	}
