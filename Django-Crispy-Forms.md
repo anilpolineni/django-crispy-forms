@@ -52,7 +52,7 @@ python manage.py startapp student
 
 #### Next, you need to add accounts in the INSTALLED_APPS array inside the settings.py file of your project.
 
-```
+````
 Installing & Setting up django-crispy-forms
 ````
 
