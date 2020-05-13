@@ -118,7 +118,7 @@ def home(request):
 ## Run Server
 * Execute the following command and access the template by entering localhost:8000/home at the browser.
 
-<img src="homepage" height=300px; width=900px;>
+<img src="homepage.png" height=300px; width=900px;>
 
 
 
