@@ -1,4 +1,4 @@
-# Django template language
+# Django template language(D.T.L)
 
 * This document explains the language syntax of the Django template system.
 * Django’s template language is designed to strike a balance between power and ease.
@@ -81,6 +81,7 @@ ____
 
 * Inside header.html apply code [navbar](https://www.w3schools.com/bootstrap4/bootstrap_navbar.asp)
 
+<img src="nav.png" height=300px; width=900px;>
 
 
 
