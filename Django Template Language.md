@@ -143,13 +143,13 @@ def home(request):
 * Variables associated with a context can be accessed by ``{{}}`` (double curly braces). For example, a variable name value is APSSDC. Then the following statement will replace name with its value.
 
 ``
-My name is {{name}}.   
+My name is {{name}}.    
 My name is APSSDC  
 ``
 
-**Django Variable Example**
+## Django Variable Example
 
-+ views.py
+**views.py**
 
 ````
 def index(request):
@@ -159,7 +159,7 @@ def index(request):
 	return render(request,'demoapp/home.html',name)
 ````
 
-+ home.html
+**home.html**
 
 ```
 {% extends 'demoapp/base.html' %}
@@ -180,12 +180,12 @@ def index(request):
 
 ## Static Contact Details
 
-* urls.py
+**urls.py**
 
 ````
 path('contact/',views.contact,name="contact")
 ````
-* views.py
+**views.py**
 
 ````
 def contact(request):
@@ -198,7 +198,7 @@ def contact(request):
 	return render(request,'demoapp/contact.html',details)
 ````
 
-* contact.html
+**contact.html**
 
 ````
 {% extends 'demoapp/base.html' %}
@@ -228,7 +228,7 @@ ____
 
 ## Static Contact Details
 
-* urls.py
+**urls.py**
 
 ````
 path('about/',views.about,name="about")
