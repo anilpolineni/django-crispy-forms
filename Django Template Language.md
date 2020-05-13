@@ -174,7 +174,7 @@ def index(request):
 
 ## output
 
-<img src ="var.png"  height=300px; width=900px;>
+<img src ="vars.png"  height=300px; width=900px;>
 
 
 ## Static Contact Details
